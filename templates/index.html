@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Audio examples for Generative Music Restoration with High-Fidelity Acoustic Latents and Content Representations by Chengzhong Wang, Zhaoyang Wang, Dingding Yao, Junfeng Li, and Yonghong Yan. Hear restoration at ultra-low SNRs and compare baselines after continued training on the same constructed challenging data.">
+  <meta name="theme-color" content="#faf9f6">
+  <title>Generative Music Restoration with High-Fidelity Acoustic Latents and Content Representations · Audio Demo</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23483c76'/%3E%3Cpath d='M8 13v6m5-11v16m6-13v10m5-7v4' stroke='%23fff' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/player.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#samples">Skip to audio samples</a>
+  <header class="masthead wrap">
+    <a class="wordmark" href="#top" aria-label="Music restoration, back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6m6-11v16m6-13v10m6-7v4"/></svg><span>Music restoration</span></a>
+    <span class="masthead-label">RESEARCH AUDIO DEMO</span>
+  </header>
+  <main id="top">
+    <section class="intro wrap" aria-labelledby="page-title">
+      <h1 class="paper-title" id="page-title">Generative Music Restoration with High-Fidelity Acoustic Latents and Content Representations</h1>
+      <ul class="paper-authors" aria-label="Paper authors">
+        <li>Chengzhong Wang<sup>1,2</sup></li>
+        <li>Zhaoyang Wang<sup>1,2</sup></li>
+        <li>Dingding Yao<sup>1,2</sup></li>
+        <li>Junfeng Li<sup>1,2,*</sup></li>
+        <li>Yonghong Yan<sup>1,2</sup></li>
+      </ul>
+      <div class="paper-affiliations" aria-label="Author affiliations">
+        <p><sup>1</sup> Institute of Acoustics, Chinese Academy of Sciences, Beijing, China</p>
+        <p><sup>2</sup> University of Chinese Academy of Sciences, Beijing, China</p>
+        <p><sup>*</sup> Corresponding author</p>
+      </div>
+      <p class="intro-copy">This demo accompanies our work on restoring music degraded by loudspeaker playback and everyday recording. The examples include <strong>severely attenuated or missing</strong> low-frequency bands and <strong>ultra-low signal-to-noise ratios</strong> (SNRs). In these challenging conditions, the proposed method preserves observable acoustic detail and reconstructs missing musical components with high fidelity, while the compared methods can produce substantial hallucinations.</p>
+      <p class="intro-copy paper-overview">Our system combines a high-fidelity acoustic latent space built from PupuJEPA-Tiny and decoded by Vocos with RePupu, a PupuJEPA-Base encoder-predictor that restores content representations. Together, the degraded acoustic latents and restored content condition a three-step Pixel MeanFlow generator.</p>
+      <div class="intro-bottom">
+        <p class="summary"><strong>@@COUNT@@</strong> audio samples</p>
+        <p class="headphone-note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-3a8 8 0 0 1 16 0v3M4 13H3v7h4v-7H4Zm16 0h1v7h-4v-7h3Z"/></svg>Headphones recommended</p>
+      </div>
+    </section>
+    <nav class="sample-nav" aria-label="Audio sample navigation"><div class="wrap nav-inner"><span class="nav-label">EXPLORE SAMPLES</span><div class="nav-links">@@NAV@@</div></div></nav>
+    <section class="comparisons wrap" id="samples" aria-labelledby="comparison-title">
+      <div class="section-heading"><div><h2 id="comparison-title">Sample Comparison</h2></div><div class="scale-key"><div class="scale-top"><span>STFT magnitude</span><span>dBFS</span></div><img src="assets/scale.png" alt="Magma color scale, dark at minus 80 dBFS to light at zero dBFS" width="256" height="12"><div class="scale-ticks"><span>−80</span><span>−40</span><span>0</span></div></div></div>
+      <aside class="baseline-note" aria-labelledby="baseline-note-title">
+        <h3 id="baseline-note-title">Baseline training for this comparison</h3>
+        <p>The original tasks of the compared baselines did not cover samples with this level of difficulty. All compared baselines—Apollo, MMAudio-Flow, and SonicMaster—were therefore further trained using the same data pipeline as our method, as described in the paper.</p>
+      </aside>
+      @@SAMPLES@@
+    </section>
+  </main>
+  <footer class="wrap"><span>Music Restoration <span class="footer-dot">·</span> Audio demo</span><a href="#top">Back to top ↑</a></footer>
+  <dialog id="spectrogram-dialog" aria-labelledby="dialog-title"><div class="dialog-head"><h2 id="dialog-title">Spectrogram</h2><button class="dialog-close" type="button" aria-label="Close enlarged spectrogram">×</button></div><img class="dialog-image" alt=""><p>Time (s) · Frequency (kHz) · Fixed scale: −80 to 0 dBFS</p><a class="dialog-original" href="">Open image ↗</a></dialog>
+  <div class="sr-only" role="status" id="playback-status" aria-live="polite"></div>
+</body>
+</html>

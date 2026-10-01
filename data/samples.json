@@ -1,0 +1,387 @@
+{
+  "spectrogram": {
+    "fft_size": 512,
+    "hop_length": 128,
+    "window": "hann",
+    "analysis_sample_rate": 16000,
+    "resampling": "polyphase resampling of analysis copies only",
+    "scale": "dB relative to STFT amplitude 1.0; scipy spectrum scaling",
+    "limits_db": [
+      -80,
+      0
+    ],
+    "frequency_max_hz": 8000.0,
+    "channel_aggregation": "mean power",
+    "colormap": "magma",
+    "time_alignment": "not applied",
+    "audio_gain_normalization": false
+  },
+  "samples": [
+    {
+      "id": "1",
+      "plot_duration": 18.181625,
+      "duration_warning_methods": [],
+      "methods": {
+        "clean": {
+          "audio": "audio/clean/1.wav",
+          "spectrogram": "assets/spectrograms/1-clean.png",
+          "duration": 18.181625,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 290906,
+          "sha256": "d73c88123ecfea9e480c598d908dd2ab455dc59a32fb3372950a57902785a217"
+        },
+        "noisy": {
+          "audio": "audio/noisy/1.wav",
+          "spectrogram": "assets/spectrograms/1-noisy.png",
+          "duration": 18.0,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 288000,
+          "sha256": "2a7bb4a5e34735b5f7340e5b0ef852a13da34fc5e9bb3aaa57380a79ed478649"
+        },
+        "apollo": {
+          "audio": "audio/apollo/1.wav",
+          "spectrogram": "assets/spectrograms/1-apollo.png",
+          "duration": 18.0,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 288000,
+          "sha256": "d72b025282e95c803ae818e6e2bf70ee7282fa793b913274aaf843bc919d86be"
+        },
+        "mmaudio-flow": {
+          "audio": "audio/mmaudio-flow/1.wav",
+          "spectrogram": "assets/spectrograms/1-mmaudio-flow.png",
+          "duration": 18.0,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 288000,
+          "sha256": "dba567c08ce7b789daf1e457411e061b4ba9b2d2b47d9253130f4eaaee5540b6"
+        },
+        "sonicmaster": {
+          "audio": "audio/sonicmaster/1.wav",
+          "spectrogram": "assets/spectrograms/1-sonicmaster.png",
+          "duration": 18.0,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 288000,
+          "sha256": "eea5d34fca7db45d4f713c2a3c5a6715b03861efd2d1db08a85e167e725620cd"
+        },
+        "proposed": {
+          "audio": "audio/proposed/1.wav",
+          "spectrogram": "assets/spectrograms/1-proposed.png",
+          "duration": 18.0,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 288000,
+          "sha256": "27ff32e3659ccc3b403e2dcbf77775f72ed3fb16c38ac66bba25828fbc4dc3b9"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "plot_duration": 20.8714375,
+      "duration_warning_methods": [],
+      "methods": {
+        "clean": {
+          "audio": "audio/clean/2.wav",
+          "spectrogram": "assets/spectrograms/2-clean.png",
+          "duration": 20.813875,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 333022,
+          "sha256": "636bcbaf539d214ff408ec4b9fb1d482a2012df03b43fbf9eea7698b0bcfa37f"
+        },
+        "noisy": {
+          "audio": "audio/noisy/2.wav",
+          "spectrogram": "assets/spectrograms/2-noisy.png",
+          "duration": 20.8714375,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 333943,
+          "sha256": "e84f65703cbb9bdcd3f1029048ec422435df7cecc1d34eb12c25c0ce5a5993d0"
+        },
+        "apollo": {
+          "audio": "audio/apollo/2.wav",
+          "spectrogram": "assets/spectrograms/2-apollo.png",
+          "duration": 20.8714375,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 333943,
+          "sha256": "b4ecdaaa8fec76b4de3f348844be6a5c6fc1103023722397d95f9d74a5150f31"
+        },
+        "mmaudio-flow": {
+          "audio": "audio/mmaudio-flow/2.wav",
+          "spectrogram": "assets/spectrograms/2-mmaudio-flow.png",
+          "duration": 20.8714375,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 333943,
+          "sha256": "958e2334ad01e2edd01e3569fc2d6d697a22c3983d32ca452c19b83ff9769046"
+        },
+        "sonicmaster": {
+          "audio": "audio/sonicmaster/2.wav",
+          "spectrogram": "assets/spectrograms/2-sonicmaster.png",
+          "duration": 20.8714375,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 333943,
+          "sha256": "01cfb31763918f88942ea1c2fe1c84f5ff4a99f6f3758985a4433cdb61672375"
+        },
+        "proposed": {
+          "audio": "audio/proposed/2.wav",
+          "spectrogram": "assets/spectrograms/2-proposed.png",
+          "duration": 20.8714375,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 333943,
+          "sha256": "24503f5cbfbb60e5c34f44ece6d060cc8ed1339ce1818e0de8554c4b65489d46"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "plot_duration": 27.695875,
+      "duration_warning_methods": [],
+      "methods": {
+        "clean": {
+          "audio": "audio/clean/3.wav",
+          "spectrogram": "assets/spectrograms/3-clean.png",
+          "duration": 27.695875,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 443134,
+          "sha256": "b7304243c1d2c08166205e2dd7e82fc095b07562785f90a21472258998ce3bf4"
+        },
+        "noisy": {
+          "audio": "audio/noisy/3.wav",
+          "spectrogram": "assets/spectrograms/3-noisy.png",
+          "duration": 27.0805625,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 433289,
+          "sha256": "b97408015fb41ecf37f87401070feefe6e47afbe959a343f86451406a0e825c3"
+        },
+        "apollo": {
+          "audio": "audio/apollo/3.wav",
+          "spectrogram": "assets/spectrograms/3-apollo.png",
+          "duration": 27.0805625,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 433289,
+          "sha256": "9f4d91256fd7e5f48d8da207ca5a808caa1e933954c4f5e849898b5c61c1fbc4"
+        },
+        "mmaudio-flow": {
+          "audio": "audio/mmaudio-flow/3.wav",
+          "spectrogram": "assets/spectrograms/3-mmaudio-flow.png",
+          "duration": 27.0805625,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 433289,
+          "sha256": "94e5e3024687a60060fb699a8338a737cebf81984d333053ab070e8b9c410f43"
+        },
+        "sonicmaster": {
+          "audio": "audio/sonicmaster/3.wav",
+          "spectrogram": "assets/spectrograms/3-sonicmaster.png",
+          "duration": 27.0805625,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 433289,
+          "sha256": "230d68f7550d00806db3396674926fd83c72b78870d22f79339dd3d4e4ca8ca6"
+        },
+        "proposed": {
+          "audio": "audio/proposed/3.wav",
+          "spectrogram": "assets/spectrograms/3-proposed.png",
+          "duration": 27.0805625,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 433289,
+          "sha256": "fb293b0bf534b29bc977abc3f09656c9f7e02c19fc7d81fb7536504b752aec7d"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "plot_duration": 39.725875,
+      "duration_warning_methods": [],
+      "methods": {
+        "clean": {
+          "audio": "audio/clean/4.wav",
+          "spectrogram": "assets/spectrograms/4-clean.png",
+          "duration": 39.5185625,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 632297,
+          "sha256": "bbd228480f76b1516fae3fad34e03efb6734a211d13e84e92db5e7fc4b86586a"
+        },
+        "noisy": {
+          "audio": "audio/noisy/4.wav",
+          "spectrogram": "assets/spectrograms/4-noisy.png",
+          "duration": 39.725875,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 635614,
+          "sha256": "61499f9519fd2ed3e3a87b498ceb388cfeaca39302c876691ca961fcf80dcf3d"
+        },
+        "apollo": {
+          "audio": "audio/apollo/4.wav",
+          "spectrogram": "assets/spectrograms/4-apollo.png",
+          "duration": 39.725875,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 635614,
+          "sha256": "4603a06dad08257d3f8b0cb4f07885e953c46ff56cecfb6f59563f329a4e917e"
+        },
+        "mmaudio-flow": {
+          "audio": "audio/mmaudio-flow/4.wav",
+          "spectrogram": "assets/spectrograms/4-mmaudio-flow.png",
+          "duration": 39.725875,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 635614,
+          "sha256": "1f7ccc52040b0970f5b5b71d04ead2dc99b9cac93c8ee6e369d92e5eea8ff496"
+        },
+        "sonicmaster": {
+          "audio": "audio/sonicmaster/4.wav",
+          "spectrogram": "assets/spectrograms/4-sonicmaster.png",
+          "duration": 39.725875,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 635614,
+          "sha256": "7a726fc40ee8805e876c77fb14bad0e9f0dd8b9a22288c15371b637a61894eb7"
+        },
+        "proposed": {
+          "audio": "audio/proposed/4.wav",
+          "spectrogram": "assets/spectrograms/4-proposed.png",
+          "duration": 39.725875,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 635614,
+          "sha256": "f7a6c5948fbf798e751b2f6d55de63416cd4f848729b49274ba9a325890819ef"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "plot_duration": 27.5363125,
+      "duration_warning_methods": [],
+      "methods": {
+        "clean": {
+          "audio": "audio/clean/5.wav",
+          "spectrogram": "assets/spectrograms/5-clean.png",
+          "duration": 27.437,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 438992,
+          "sha256": "cb9b55714413caaae53cc71315cb9701c1348ebdb2b5bb3df8806eeb41fc2a62"
+        },
+        "noisy": {
+          "audio": "audio/noisy/5.wav",
+          "spectrogram": "assets/spectrograms/5-noisy.png",
+          "duration": 27.5363125,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 440581,
+          "sha256": "eb1dbe61308313470edb535308f938168aef820c3492a683dc95bb35e68e58ab"
+        },
+        "apollo": {
+          "audio": "audio/apollo/5.wav",
+          "spectrogram": "assets/spectrograms/5-apollo.png",
+          "duration": 27.5363125,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 440581,
+          "sha256": "49e13af9f1b32a54d8542d107a3c31d0f4be9ba0085bb83365c0fe5de5e76c13"
+        },
+        "mmaudio-flow": {
+          "audio": "audio/mmaudio-flow/5.wav",
+          "spectrogram": "assets/spectrograms/5-mmaudio-flow.png",
+          "duration": 27.5363125,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 440581,
+          "sha256": "5584589aa471972676c76b1e43def0e34fe17c91b8611ba33ed3679ab698e918"
+        },
+        "sonicmaster": {
+          "audio": "audio/sonicmaster/5.wav",
+          "spectrogram": "assets/spectrograms/5-sonicmaster.png",
+          "duration": 27.5363125,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 440581,
+          "sha256": "354cf16c3cf0a928489a7712a675d8d03a8b5d0ad099b3b5731086d946a79a23"
+        },
+        "proposed": {
+          "audio": "audio/proposed/5.wav",
+          "spectrogram": "assets/spectrograms/5-proposed.png",
+          "duration": 27.5363125,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 440581,
+          "sha256": "8981a29298a3d7d35ac8bd07abedc5e8e2a8ab42709e0a3243dd49fd5b836683"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "plot_duration": 13.806375,
+      "duration_warning_methods": [],
+      "methods": {
+        "clean": {
+          "audio": "audio/clean/6.wav",
+          "spectrogram": "assets/spectrograms/6-clean.png",
+          "duration": 13.806375,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 220902,
+          "sha256": "0accf408e79536eaaf7c84da5ddee0d677f7e10511dcac78f315f6e24c1f007d"
+        },
+        "noisy": {
+          "audio": "audio/noisy/6.wav",
+          "spectrogram": "assets/spectrograms/6-noisy.png",
+          "duration": 13.5745625,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 217193,
+          "sha256": "2a1a0c29f6a0de20f05b8b9d345272846647c57c173b2a7cd96be0882fa2db9a"
+        },
+        "apollo": {
+          "audio": "audio/apollo/6.wav",
+          "spectrogram": "assets/spectrograms/6-apollo.png",
+          "duration": 13.5745625,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 217193,
+          "sha256": "ad00a360518eee4bd8f742e6b7e47ac61c8303eb1480c3144b920acc6f9d4843"
+        },
+        "mmaudio-flow": {
+          "audio": "audio/mmaudio-flow/6.wav",
+          "spectrogram": "assets/spectrograms/6-mmaudio-flow.png",
+          "duration": 13.5745625,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 217193,
+          "sha256": "25c591edff99049767afaf1f1adb61bdeb2eea40996180cd8b6d701ee3dab0cd"
+        },
+        "sonicmaster": {
+          "audio": "audio/sonicmaster/6.wav",
+          "spectrogram": "assets/spectrograms/6-sonicmaster.png",
+          "duration": 13.5745625,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 217193,
+          "sha256": "01a48a8f63c61b0653d2c2c343bf7d8854fee9fa6f58516a20a020811b876bae"
+        },
+        "proposed": {
+          "audio": "audio/proposed/6.wav",
+          "spectrogram": "assets/spectrograms/6-proposed.png",
+          "duration": 13.5745625,
+          "sample_rate": 16000,
+          "channels": 1,
+          "frames": 217193,
+          "sha256": "a0be2dc2325461e706b0570e7e9e987b0ba7f0a6b9c9dd82b39c967fb2a20005"
+        }
+      }
+    }
+  ]
+}
